@@ -25,12 +25,14 @@ const Intro = () => {
     <div
       id="intro"
       className=" w-full h-[calc(100vh-66px)] md:h-[calc(100vh-80px)] image-gradient relative top-[66px] 
+      md:landscape:flex-row 
       lg:top-[80px] flex flex-col lg:flex-row"
     >
       {/* text intro */}
       <div
         className="h-2/6 p-8 flex flex-col items-start justify-center 
         md:items-center md:h-2/5
+        md:landscape:w-1/2 md:landscape:h-full
         lg:items-start lg:px-28 lg:h-4/5 lg:w-1/2
       "
       >
@@ -53,11 +55,15 @@ const Intro = () => {
       </a>
       {/* Personal image */}
       <div
-        className="logo h-4/6 p-4 pb-0 flex flex-col items-center justify-end 
-      md:h-full lg:h-full lg:w-1/2 landscape:hidden
+        className="logo  h-4/6 p-4 pb-0 flex flex-col items-center justify-end 
+      md:h-full lg:h-full lg:w-1/2 
+      md:landscape:w-1/2
       "
       >
-        <div className=" w-full h-full relative ">
+        <div className="foto w-full h-full relative 
+          md:landscape:w-1/2
+          lg:landscape:w-full z-10
+        ">
           <Image
             src="/images/jorgito.png"
             // height="100%"

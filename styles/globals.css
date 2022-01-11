@@ -36,6 +36,12 @@
     @apply bg-slate-900 text-white;
   }
 
+  /* Intro */
+  .foto {
+    /* When the orientation landscape (like mobile horizontal) the image is hidden  */
+    /* @apply md:landscape:hidden lg:landscape:block; */
+  }
+
   /* Component styles  */
   .section-item {
     @apply w-screen h-[calc(100vh-5rem)] top-20;
