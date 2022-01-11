@@ -20,4 +20,11 @@ export const data = [
     site: "https://www.juliacodes.com/",
     repository: "https://github.com/Artwot",
   },
+  {
+    title: "Proyecto 4",
+    cover: "/images/pop.jpg",
+    desc: "Esta es mi descripción, sencilla, corta, no más de dos o tres renglones.",
+    site: "https://www.juliacodes.com/",
+    repository: "https://github.com/Artwot",
+  },
 ];

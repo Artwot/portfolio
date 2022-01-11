@@ -23,7 +23,7 @@ const Footer = () => {
           Construido con Next.js, JS, TailwindCSS & ❤️ por{" "}
           <Link href="https://github.com/Artwot">
             <a className="cursor-pointer text-slate-900">
-              <p className="">Jorge Arturo Sarabia</p>
+              <span className="">Jorge Arturo Sarabia</span>
             </a>
           </Link>
         </p>

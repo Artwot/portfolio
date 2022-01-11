@@ -23,12 +23,12 @@
 @layer components {
   /* h2 body */
   .subtitle {
-    @apply font-semibold text-3xl leading-relaxed;
+    @apply font-semibold text-3xl leading-relaxed md:text-[48px];
   }
 
   /* General paragraphs */
   .paragraph {
-    @apply text-textGray my-12 leading-loose text-left tracking-wide;
+    @apply text-textGray my-12 leading-loose text-left tracking-wide md:text-xl;
   }
 
   /* When the menu is active */
@@ -75,12 +75,14 @@
 
   /* Skills  */
   .skills-list-item {
-    @apply my-2 bg-intro text-slate-900 max-w-max rounded-lg py-1 px-2 md:mx-6;
+    @apply my-2 bg-gradient-to-r from-[#66a6ff] to-[#89f7fe] hover:to-[#8fd3f4] hover:from-[#84fab0] 
+    text-slate-50 hover:text-slate-800 w-max rounded-lg py-1 px-2 md:w-1/4  md:mx-6 md:mb-6 md:text-xl lg:w-1/5 lg:mb-12
+    transition-all duration-200 ease-in;
   }
 
   /* Projects */
   .project-card {
-    @apply mb-8;
+    @apply mb-8 lg:w-2/5;
   }
 
   /* Project button  */
@@ -91,12 +93,12 @@
   /* Contact */
   /* contact form inputs */
   .form {
-    @apply mb-4 bg-intro p-2 rounded-2xl text-slate-900;
+    @apply mb-4 bg-gray-50 p-2 rounded-2xl text-slate-900;
   }
 
   /* ------------------------------------------- */
   .image-gradient {
-    background: linear-gradient(-45deg, #FF6A88, #D9AFD9, #B5FFFC, #23d5ab);
+    background: linear-gradient(-45deg, #ff6a88, #d9afd9, #b5fffc, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;

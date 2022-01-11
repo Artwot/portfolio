@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className="w-full md:h-20 sm:h-10 shadow-lg fixed top-0 z-50 bg-white">
+    <div className="w-full lg:h-20  shadow-lg fixed top-0 z-50 bg-white">
       <div
         className={
           "py-2 px-8 flex justify-between items-center h-full transition-colors duration-500 ease-in-out " +
