@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className="w-full h-20 shadow-lg fixed top-0 z-10">
+    <div className="w-full md:h-20 sm:h-10 shadow-lg fixed top-0 z-50 bg-white">
       <div
         className={
           "py-2 px-8 flex justify-between items-center h-full transition-colors duration-500 ease-in-out " +
@@ -16,7 +16,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           <Link href="#intro">
             <a className="flex">
               <Image
-                src="/logos/jorge.png"
+                src={menuOpen ? "/logos/jorge-light.svg" : "/logos/jorge.svg"}
                 alt="Jorge"
                 width="50px"
                 height="50px"
@@ -25,7 +25,6 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             </a>
           </Link>
         </div>
-        <div>Hola</div>
         {/* Menu Items */}
         <div className="menu-items">
           <div
