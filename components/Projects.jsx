@@ -12,28 +12,36 @@ const Projects = ({ projects }) => {
       {/* Projects card container  */}
       <div className="card-container w-full h-max flex flex-col lg:flex-row lg:justify-around lg:flex-wrap ">
         {projects.map((project) => (
-          <div key={project.title} className="project-card p-2 rounded-2xl lg:mb-20">
-            <div className="img-cover w-full">
+          <div
+            key={project.title}
+            className="project-card p-2 rounded-2xl lg:mb-20 bg-[#fcfcfc]"
+          >
+            <div className="img-cover w-full h-max">
               <Image
                 src={project.cover}
                 width="100"
-                height="80"
+                height="70"
                 layout="responsive"
-                objectFit="cover"
+                objectFit="contain"
                 alt={project.title}
                 placeholder="blur"
                 blurDataURL="/images/project-example.jpg"
               />
             </div>
             {/* Project title */}
-            <h3 className="font-bold text-xl my-1 lg:my-5 lg:text-3xl">{project.title}</h3>
+            <h3 className="font-bold text-xl my-1 lg:my-0 lg:text-3xl">
+              {project.title}
+            </h3>
             {/* Project description */}
             <p className="font-normal text-textGray text-sm mb-4 lg:text-xl lg:mb-6">
               {project.desc}
             </p>
             {/* Buttons */}
             <div className="button-container flex items-center justify-center lg:text-xl">
-              <a href={project.site} className="project-button mr-8 group lg:mr-16 ">
+              <a
+                href={project.site}
+                className="project-button mr-8 group lg:mr-16 "
+              >
                 <i className="fas fa-external-link-alt group-hover:text-white"></i>{" "}
                 <span className="group-hover:text-white"> Sitio web</span>
               </a>

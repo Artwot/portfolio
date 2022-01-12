@@ -32,9 +32,9 @@ export default function Home({ projects }) {
       <Skills />
       <Projects projects={projects} />
       <About />
-      <Contact />
+      {/* <Contact /> */}
       <br />
-      <div className="flex justify-center items-center py-10">
+      <div className="flex justify-center items-center py-10 bg-[#fcfcfc]">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
           <i className="far fa-smile text-slate-900 text-xl"></i>
         </a>

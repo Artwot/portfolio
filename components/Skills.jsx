@@ -6,10 +6,8 @@ const Skills = () => {
     >
       <h2 className="subtitle ">Habilidades técnicas</h2>
       <p className="paragraph">
-        A lo largo de mis estudios de licenciatura he ido obteniendo un sólido
-        conocimiento sobre conceptos de ingeniería de software y desarrollo
-        web,y he dedicado bastante tiempo a aplicar dichos conceptos a
-        diferentes aplicaciones con un excenario del mundo real.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fugiat?
+        Consectetur molestias vitae facere explicabo maxime laboriosam
       </p>
       <ul className="font-semibold flex flex-col md:flex-row md:flex-wrap md:justify-center md:items-center lg:mt-28 lg:mb-28">
         <li className="skills-list-item">JavaScript ES6</li>

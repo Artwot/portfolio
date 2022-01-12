@@ -2,7 +2,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
       className={
-        "w-60 md:w-80 h-screen overflow-y-hidden bg-slate-900 text-white font-light fixed top-0 -right-80 z-10 flex flex-col items-center justify-center transition-all duration-700 ease-in-out " +
+        "w-60 md:w-80 h-screen overflow-y-hidden bg-slate-900 text-white font-light fixed top-0 -right-80 z-40 flex flex-col items-center justify-center transition-all duration-700 ease-in-out " +
         (menuOpen ? "-right-0" : "-right-80")
       }
     >
@@ -44,14 +44,14 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           <a href="#about">Sobre mí</a>
         </li>
         {/* Contact */}
-        <li
+        {/* <li
           className="list-menu-item"
           onClick={() => {
             setMenuOpen(false);
           }}
         >
           <a href="#contact">Contacto</a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

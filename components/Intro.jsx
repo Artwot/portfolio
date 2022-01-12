@@ -9,17 +9,17 @@ const Intro = () => {
   const textRef = useRef();
 
   // For the typed text
-  // useEffect(() => {
-  //   init(textRef.current, {
-  //     showCursor: true,
-  //     backDelay: 1500,
-  //     strings: [
-  //       "Ing. en sistemas computacionales",
-  //       "Desarrollador Front End",
-  //       "Construyo cosas para la web",
-  //     ],
-  //   });
-  // }, []);
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      strings: [
+        "Ing. en sistemas computacionales",
+        "Desarrollador Front End",
+        "Construyo cosas para la web",
+      ],
+    });
+  }, []);
 
   return (
     <div
@@ -43,8 +43,8 @@ const Intro = () => {
           Jorge Arturo
         </h1>
         <h3 className="font-medium text-lg md:text-2xl lg:text-2xl leading-relaxed">
-          {/* <span className="text-slate-900" ref={textRef}></span> */}
-          Desarrollador web
+          <span className="text-slate-900" ref={textRef}></span>
+          {/* Desarrollador web */}
         </h3>
       </div>
       <a

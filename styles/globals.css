@@ -28,7 +28,7 @@
 
   /* General paragraphs */
   .paragraph {
-    @apply text-textGray my-12 leading-loose text-left tracking-wide md:text-xl;
+    @apply text-textGray my-12 leading-loose text-left tracking-wide md:text-xl px-5;
   }
 
   /* When the menu is active */
@@ -76,7 +76,7 @@
   }
 
   .footer-logos-links {
-    @apply cursor-pointer hover:bg-slate-900;
+    @apply cursor-pointer hover:bg-slate-900 lg:px-3;
   }
 
   /* Skills  */
