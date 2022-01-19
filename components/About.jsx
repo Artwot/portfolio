@@ -1,3 +1,5 @@
+// import Pdf from "../public/resources/Currículum.pdf"
+
 const About = () => {
   return (
     <div
@@ -24,8 +26,10 @@ const About = () => {
       </div>
       <div className="resume my-10 w-full flex items-center justify-center">
         <a
-          href="https://docs.google.com/document/d/1Qh54b2ERVicNSpgBRRZ0715IY3aT7WvBuv59Eg3AcoA/edit#heading=h.x8fm1uorkbaw"
+          href="https://drive.google.com/file/d/10jVRvooSRy96iRSjqY0ehTGgsXX_stGQ/view?usp=sharing"
           className="project-button group"
+          target="_blank"
+          rel="noreferrer"
         >
           <span className="group-hover:text-white">Ver currículum</span>
         </a>

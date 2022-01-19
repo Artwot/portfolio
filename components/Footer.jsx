@@ -45,7 +45,7 @@ const Footer = () => {
           <i className="footer-logos fab fa-linkedin"></i>
         </a>
         <a
-          href="https://github.com/Artwot"
+          href="https://api.whatsapp.com/send?phone=+52 5514973779"
           className="footer-logos-links group"
         >
           <i className="footer-logos fab fa-whatsapp-square"></i>

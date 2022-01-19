@@ -25,6 +25,17 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             </a>
           </Link>
         </div>
+
+        {/* Contact */}
+        <div className="contact flex">
+          <div>
+            <a href="https://api.whatsapp.com/send?phone=+52 5514973779">
+              <i className="fas fa-mobile-alt"></i>+52 55 1497 3779
+            </a>
+          </div>
+          <div></div>
+        </div>
+
         {/* Menu Items */}
         <div className="menu-items">
           <div
