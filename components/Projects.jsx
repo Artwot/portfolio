@@ -5,16 +5,20 @@ const Projects = ({ projects }) => {
   return (
     <div
       id="projects"
-      className="w-full h-max relative top-[66px] md:top-[80px] p-8 mb-5 lg:px-20"
+      className="max-w-[1440px] mx-auto h-max relative top-[66px] md:top-[80px] p-8 mb-5 lg:px-20"
     >
       <h2 className="subtitle">Proyectos</h2>
-      <p className="paragraph">Algunos de los proyectos que he desarrollado</p>
+      <p className="paragraph">
+        Me gusta aplicar los conceptos teóricos que he aprendido desarrollando
+        aplicaciones con un enfoque del mundo real. A continuación muestro algunas de
+        las más importantes.
+      </p>
       {/* Projects card container  */}
       <div className="card-container w-full h-max flex flex-col lg:flex-row lg:justify-around lg:flex-wrap ">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="project-card p-2 rounded-2xl lg:mb-20 bg-[#fcfcfc]"
+            className="project-card p-2 rounded-2xl lg:mb-20 bg-[#fcfcfc]  hover:scale-110 transition-all duration-200 ease-in"
           >
             <div className="img-cover w-full h-max">
               <Image

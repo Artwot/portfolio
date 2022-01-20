@@ -32,26 +32,38 @@ const Footer = () => {
       </div>
       {/* Icons */}
       <div className="flex flex-wrap item-center justify-end text-base md:w-1/3 md:text-xl lg:text-3xl">
+        {/* Github */}
         <a
           href="https://github.com/Artwot"
+          target="_blank"
+          rel="noreferrer"
           className="footer-logos-links group"
         >
           <i className="footer-logos fab fa-github"></i>
         </a>
+        {/* LinkedIn */}
         <a
-          href="https://github.com/Artwot"
+          href="https://www.linkedin.com/in/jorge-arturo-sarabia/"
+          target="_blank"
+          rel="noreferrer"
           className="footer-logos-links group"
         >
           <i className="footer-logos fab fa-linkedin"></i>
         </a>
+        {/* WhatsApp */}
         <a
           href="https://api.whatsapp.com/send?phone=+52 5514973779"
+          target="_blank"
+          rel="noreferrer"
           className="footer-logos-links group"
         >
           <i className="footer-logos fab fa-whatsapp-square"></i>
         </a>
+        {/* Gmail */}
         <a
-          href="https://github.com/Artwot"
+          href="mailto:jsarabiar98@gmail.com"
+          target="_blank"
+          rel="noreferrer"
           className="footer-logos-links group"
         >
           <i className="footer-logos fas fa-envelope"></i>

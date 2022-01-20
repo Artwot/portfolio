@@ -32,7 +32,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             setMenuOpen(false);
           }}
         >
-          <a href="#projects">Projectos</a>
+          <a href="#projects">Proyectos</a>
         </li>
         {/* About */}
         <li
@@ -43,15 +43,67 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         >
           <a href="#about">Sobre mí</a>
         </li>
-        {/* Contact */}
-        {/* <li
+        {/* Currículum */}
+        <li
           className="list-menu-item"
           onClick={() => {
             setMenuOpen(false);
           }}
         >
-          <a href="#contact">Contacto</a>
-        </li> */}
+          <a 
+          href="/resources/Curriculum.pdf"
+          alt="alt text"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Currículum</a>
+        </li>
+        <hr />
+        {/* Contact icons*/}
+        <li
+          className="list-menu-item mt-10"
+          onClick={() => {
+            setMenuOpen(false);
+          }}
+        >
+          <div className="flex flex-wrap gap-4 justify-center">
+            {/* Github */}
+            <a
+              href="https://github.com/Artwot"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-logos-links group hover:scale-125 transition-all duration-200 ease-in"
+            >
+              <i className="footer-logos fab fa-github"></i>
+            </a>
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/jorge-arturo-sarabia/"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-logos-links group hover:scale-125 transition-all duration-200 ease-in"
+            >
+              <i className="footer-logos fab fa-linkedin "></i>
+            </a>
+            {/* WhatsApp */}
+            <a
+              href="https://api.whatsapp.com/send?phone=+52 5514973779"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-logos-links group hover:scale-125 transition-all duration-200 ease-in"
+            >
+              <i className="footer-logos fab fa-whatsapp-square"></i>
+            </a>
+            {/* Gmail */}
+            <a
+              href="mailto:jsarabiar98@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-logos-links group hover:scale-125 transition-all duration-200 ease-in"
+            >
+              <i className="footer-logos fas fa-envelope"></i>
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   );

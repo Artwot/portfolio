@@ -27,13 +27,33 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
         </div>
 
         {/* Contact */}
-        <div className="contact flex">
-          <div>
-            <a href="https://api.whatsapp.com/send?phone=+52 5514973779">
-              <i className="fas fa-mobile-alt"></i>+52 55 1497 3779
+        <div className="contact hidden md:flex md:grow md:pl-20 ">
+          <div className="mr-10">
+            <a
+              href="https://api.whatsapp.com/send?phone=+52 5514973779"
+              target="_blank"
+              rel="noreferrer"
+              className="group hover:underline"
+            >
+              <i className="fas fa-mobile-alt mr-3 text-xl"></i>
+              <span className="hidden md:inline group-hover:font-semibold">
+                (+52) 55 1497 3779
+              </span>
             </a>
           </div>
-          <div></div>
+          <div>
+            <a
+              href="mailto:jsarabiar98@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="group hover:underline"
+            >
+              <i className="far fa-envelope mr-3 text-xl"></i>
+              <span className="hidden md:inline group-hover:font-semibold">
+                jsarabiar98@gmail.com
+              </span>
+            </a>
+          </div>
         </div>
 
         {/* Menu Items */}

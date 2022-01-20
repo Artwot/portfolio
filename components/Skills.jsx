@@ -2,12 +2,19 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full h-max relative top-[66px] md:top-[80px] p-8 lg:px-20 "
+      className="max-w-[1440px] mx-auto h-max relative top-[66px] md:top-[80px] p-8 lg:px-20 mt-28"
     >
       <h2 className="subtitle ">Habilidades técnicas</h2>
-      <p className="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fugiat?
-        Consectetur molestias vitae facere explicabo maxime laboriosam
+      <p className="paragraph ">
+        Considero que a lo largo de mis estudios universitarios, logré adquirir
+        diversos conocimientos acerca de los principales conceptos sobre ciencia
+        de la computación, ingeniería de software y desarrollo web, por lo cual
+        he dedicado gran parte de mi tiempo a aplicar dichos conceptos en
+        diferentes proyectos.
+        <br />
+        <br />
+        Estas son algunas de las tecnologías con las que estoy más
+        familiarizado:
       </p>
       <ul className="font-semibold flex flex-col md:flex-row md:flex-wrap md:justify-center md:items-center lg:mt-28 lg:mb-28">
         <li className="skills-list-item">JavaScript ES6</li>
