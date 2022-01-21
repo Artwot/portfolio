@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
@@ -14,7 +16,9 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             setMenuOpen(false);
           }}
         >
-          <a href="#intro">Inicio</a>
+          <Link href="/#intro" scroll={false}>
+            <a>Intro</a>
+          </Link>
         </li>
         {/* Skills */}
         <li
@@ -50,12 +54,14 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             setMenuOpen(false);
           }}
         >
-          <a 
-          href="/resources/Curriculum.pdf"
-          alt="alt text"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Currículum</a>
+          <a
+            href="/resources/Curriculum.pdf"
+            alt="alt text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Currículum
+          </a>
         </li>
         <hr />
         {/* Contact icons*/}

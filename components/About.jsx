@@ -3,20 +3,19 @@
 const About = () => {
   return (
     <div
-      id="about"
-      className="max-w-[1440px] mx-auto h-max top-[66px] md:top-[80px] p-8 lg:px-32 lg:mt-28 "
+      className="max-w-[1440px] mx-auto h-max top-[66px] relative md:top-[80px] p-8 lg:px-32 lg:mt-28 lg:mb-28"
     >
       <h2 className="subtitle">Sobre mí</h2>
       {/* About me info */}
       <div className="texto columns-1 md:columns-2 ">
-        <p className=" paragraph ">
+        <p className=" paragraph text-justify ">
           Soy ingeniero en sistemas computacionales, egresado del Instituto
           Tecnológico de Toluca, con especialidad en tecnologías para el
           desarrollo de aplicaciones. Me considero un apasionado de la
           tecnología y me gusta aprender constantemente sobre nuevas
           herramientas y técnicas que me ayuden a mejorar mi trabajo.
         </p>
-        <p className="paragraph   md:pt-12">
+        <p className="paragraph text-justify md:pt-12">
           Actualmente estoy enfocado en mejorar mis conocimientos y habilidades
           en el campo del desarrollo web, principalmente en el Front End,
           construyendo aplicaciones funcionales y agradables al usuario,

@@ -88,7 +88,8 @@
 
   /* Project categories */
   .category-list-element {
-    @apply border border-slate-900 rounded-lg p-2 cursor-pointer font-medium text-base md:font-bold md:text-xl hover:shadow-lg transition-all duration-200 ease-in;
+    @apply border border-slate-900 rounded-lg p-2 cursor-pointer font-medium text-base md:font-bold md:text-xl 
+    hover:shadow-lg transition-all duration-200 ease-in;
   }
 
   /* Project categories active */

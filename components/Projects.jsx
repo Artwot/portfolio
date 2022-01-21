@@ -6,6 +6,7 @@ const Projects = ({ projects }) => {
   const reactRef = useRef();
   const htmlRef = useRef();
 
+  // This hook is used for change the styles of categories buttons
   useEffect(() => {
     switch (category) {
       case "react":
@@ -22,8 +23,8 @@ const Projects = ({ projects }) => {
   // Projects
   return (
     <div
-      id="projects"
-      className="max-w-[1440px] mx-auto h-max relative top-[66px] md:top-[80px] p-8 mb-5 lg:px-20"
+      
+      className="max-w-[1440px] mx-auto h-max relative top-[66px] md:top-[80px] p-8 mb-5 lg:px-20 "
     >
       <h2 className="subtitle">Proyectos</h2>
       {/* Main paragrahp */}
@@ -71,7 +72,7 @@ const Projects = ({ projects }) => {
           .map((project) => (
             <div
               key={project.title}
-              className="project-card p-2 rounded-2xl lg:mb-20 bg-[#fcfcfc]  hover:scale-110 transition-all duration-200 ease-in hover:shadow-lg"
+              className="project-card p-2 rounded-2xl lg:mb-20 bg-[#fcfcfc]  hover:scale-105 transition-all duration-200 ease-in hover:shadow-lg"
             >
               <div className="img-cover w-full h-max">
                 <Image

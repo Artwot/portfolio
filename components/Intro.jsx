@@ -23,8 +23,7 @@ const Intro = () => {
 
   return (
     <div
-      id="intro"
-      className=" w-full h-[calc(100vh-66px)] md:h-[calc(100vh-80px)] image-gradient relative top-[66px] 
+      className=" w-full h-[calc(100vh-66px)] md:h-[calc(100screen-80px)] image-gradient relative top-[66px] 
       md:landscape:flex-row 
       lg:top-[80px] flex flex-col lg:flex-row"
     >
@@ -37,7 +36,7 @@ const Intro = () => {
       "
       >
         <h2 className="font-medium text-2xl md:text-3xl md:mb-5 lg:text-4xl lg:mb-10 leading-relaxed ">
-          Hola mundo, soy
+          Hola, soy
         </h2>
         <h1 className="font-bold text-4xl md:text-6xl md:mb-7 lg:text-6xl lg:mb-10 leading-relaxed">
           Jorge Arturo Sarabia
