@@ -57,20 +57,22 @@ const Intro = () => {
       {/* Personal image */}
       <div
         className="logo  h-4/6 p-4 pb-0 flex flex-col items-center justify-end 
-      md:h-full lg:h-full lg:w-1/2 
-      md:landscape:w-1/2
+        md:h-full lg:h-full lg:w-1/2 
+        md:landscape:w-1/2 z-10 
+        md:portrait:w-2/3 md:portrait:mx-auto
       "
       >
-        <div className="foto w-full h-full relative 
+        <div
+          className="foto w-full h-full relative 
           md:landscape:w-1/2
-          lg:landscape:w-full z-10
-        ">
+          lg:landscape:w-full 
+        "
+        >
           <Image
             src="/images/jorgito.png"
-            // height="100%"
-            // width="100%"
             layout="fill"
             objectFit="cover"
+            objectPosition="center"
             alt="Jorge Arturo Sarabia"
           />
         </div>
