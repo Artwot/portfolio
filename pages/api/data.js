@@ -1,6 +1,14 @@
 export const data = [
   {
-    title: "Agency website",
+    title: "Clon de Disney+",
+    cover: "/images/mockups/main-mk-disney.png",
+    desc: "Clon de la página principal del servicio de streaming de Disney+; los datos son obtenidos de la API de TMDB",
+    site: "https://disney-clone-page.vercel.app/",
+    category: "react",
+    repository: "https://github.com/Artwot/Disney-clone-page",
+  },
+  {
+    title: "Sitio web estático de AV0CAD0",
     cover: "/images/mockups/main-mk-agency-website.png",
     desc: "Landing page de un sitio web de la agencia AV0CAD0, uso de NextJS, React Router & CSS.",
     site: "https://agency-website-sandy.vercel.app",
