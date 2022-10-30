@@ -15,7 +15,7 @@ const Skills = () => {
         Estas son algunas de las tecnologías con las que estoy más
         familiarizado:
       </p>
-      <ul className="font-semibold flex flex-col pl-5 md:flex-row md:flex-wrap md:justify-center md:items-center lg:mt-28 lg:mb-28">
+      <ul className="font-semibold flex flex-col md:flex-row md:flex-wrap md:justify-center md:items-center lg:mt-28 lg:mb-28">
         <li className="skills-list-item">JavaScript ES6</li>
         <li className="skills-list-item">HTML & CSS</li>
         <li className="skills-list-item">React</li>
