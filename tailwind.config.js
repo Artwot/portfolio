@@ -12,6 +12,8 @@ module.exports = {
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
+      spartan: ["League Spartan", "sans-serif"],
+      spectral: ["Spectral", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
     },
   },
