@@ -17,7 +17,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           }}
         >
           <Link href="/#intro" scroll={false}>
-            <a>Intro</a>
+            Intro
           </Link>
         </li>
         {/* Skills */}

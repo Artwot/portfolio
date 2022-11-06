@@ -13,16 +13,14 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
       >
         {/* Logo */}
         <div className="logo">
-          <Link href="#intro">
-            <a className="flex">
-              <Image
-                src={menuOpen ? "/logos/jorge-light.svg" : "/logos/jorge.svg"}
-                alt="Jorge"
-                width="50px"
-                height="50px"
-                className="self-center justify-self-center "
-              />
-            </a>
+          <Link href="#intro" className="flex">
+            <Image
+              src={menuOpen ? "/logos/jorge-light.svg" : "/logos/jorge.svg"}
+              alt="Jorge"
+              width="50"
+              height="50"
+              className="self-center justify-self-center "
+            />
           </Link>
         </div>
 
