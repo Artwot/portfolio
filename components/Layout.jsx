@@ -1,17 +1,18 @@
-import Topbar from "./Topbar";
+import Navbar from "./Navbar";
 import Menu from "./Menu";
-import Footer from "./Footer"
+import Footer from "./Footer";
 import { useState } from "react";
+import NavbarScroll from "./NavbarScroll";
 
 const Layout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+    <div className="w-full">
+      <NavbarScroll />
+      {/*<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />*/}
       {children}
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };
