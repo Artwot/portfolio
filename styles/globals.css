@@ -3,182 +3,201 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 /*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "League Spartan", sans-serif;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: "League Spartan", sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
 
-  html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
-  }
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+    }
 }
 
 @layer components {
-  /* h2 body */
-  .subtitle {
-    @apply font-semibold text-3xl leading-relaxed md:text-[48px];
-  }
-
-  /* General paragraphs */
-  .paragraph {
-    @apply text-textGray my-12 leading-loose text-left tracking-wide md:text-xl px-5;
-  }
-
-  /* When the menu is active */
-  .topbar-active {
-    @apply bg-slate-900 text-white;
-  }
-
-  /* Intro */
-  .foto {
-    /* When the orientation landscape (like mobile horizontal) the image is hidden  */
-    /* @apply md:landscape:hidden lg:landscape:block; */
-  }
-
-  /* Component styles  */
-  .section-item {
-    @apply w-screen h-[calc(100vh-5rem)] top-20;
-  }
-
-  /* Lines of hamburguer menu */
-  .hamburguer-lines {
-    @apply w-full h-[3px] bg-slate-900 transition-all duration-500 ease-in;
-  }
-
-  /* Lines of hamburguer menu open */
-  .hamburguer-lines-active {
-    @apply w-full h-[3px] bg-white origin-left transition-all duration-500 ease-in
-    first:rotate-45 
-    even:opacity-0
-    last:-rotate-45;
-  }
-
-  /* Active class for the menu */
-  .menu-active {
-    @apply right-0 overflow-y-hidden;
-  }
-
-  /* List menu elements */
-  .list-menu-item {
-    @apply mb-10 hover:font-medium;
-  }
-
-  /* Footer logos */
-  .footer-logos {
-    @apply m-[2px] transition-all duration-200 ease-in-out;
-  }
-
-  .footer-logos-links {
-    @apply cursor-pointer hover:scale-125 lg:px-3 transition-all duration-300 ease-in;
-  }
-
-  /* Skills  */
-  .skills-list-item {
-    @apply my-2 bg-gradient-to-r from-[#66a6ff] to-[#89f7fe] hover:to-[#8fd3f4] hover:from-[#84fab0] 
-    text-slate-50 hover:text-slate-800 w-max rounded-lg py-1 px-2 md:w-1/4  md:mx-6 md:mb-6 md:text-xl lg:w-1/5 lg:mb-12
-    transition-all duration-200 ease-in;
-  }
-
-  /* Project categories */
-  .category-list-element {
-    @apply border border-slate-900 rounded-lg p-2 cursor-pointer font-medium text-base md:font-bold md:text-xl 
-    hover:shadow-lg transition-all duration-200 ease-in;
-  }
-
-  /* Project categories active */
-  .active {
-    @apply bg-slate-900 text-white;
-  }
-
-  /* Projects */
-  .project-card {
-    @apply mb-8 lg:w-2/5;
-  }
-
-  /* Project button  */
-  .project-button {
-    @apply text-slate-900 p-2 rounded-md border-[1px] border-slate-900 hover:bg-slate-900;
-  }
-
-  /* Contact */
-  /* contact form inputs */
-  .form {
-    @apply mb-4 bg-gray-50 p-2 rounded-2xl text-slate-900;
-  }
-
-  /* ------------------------------------------- */
-  .image-gradient {
-    background: linear-gradient(
-      -45deg,
-      #b5fffc,
-      #c2e1ff,
-      #a8ffcb,
-      #ffda9c,
-      #ff9275
-    );
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+    /*  Hamburger menu */
+    .hamburger-menu {
+        @apply w-[36px] h-[36px] border rounded-full  flex flex-col justify-evenly items-center cursor-pointer
+        py-2 border-secondary;
     }
-    50% {
-      background-position: 100% 50%;
+
+    .navbar-hidden {
+        @apply -translate-y-full ;
     }
-    100% {
-      background-position: 0% 50%;
+
+    .nav-visible {
+        @apply translate-y-0 ;
     }
-  }
 
-  /* ------------------------------------------- */
-
-  /* List projects elements */
-  .list-project-item {
-    @apply text-lg mr-12 p-2 cursor-pointer focus:bg-slate-900 focus:text-white focus:rounded-xl;
-  }
-
-  /* Project item */
-  .project-item {
-    @apply w-1/3 h-48 rounded-[20px] border border-solid border-gray-100 my-3 mx-5 flex items-center justify-center text-white relative cursor-pointer;
-  }
-
-  /* Title project */
-  .title-project {
-    @apply absolute text-xl;
-  }
-
-  /* Blink animation for the ityped library */
-  .ityped-cursor {
-    -webkit-animation: blink 0.3s infinite;
-    -moz-animation: blink 0.3s infinite;
-    animation: blink 0.3s infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes blink {
-    100% {
-      opacity: 0;
+    .hamburger-line {
+        @apply block h-[1px] w-1/2 bg-secondary transition-all duration-500 ease-in;
     }
-  }
 
-  @-webkit-keyframes blink {
-    100% {
-      opacity: 0;
+    /* h2 body */
+    .subtitle {
+        @apply font-semibold text-3xl leading-relaxed md:text-[48px];
     }
-  }
+
+    /* General paragraphs */
+    .paragraph {
+        @apply text-textGray my-12 leading-loose text-left tracking-wide md:text-xl px-5;
+    }
+
+    /* When the menu is active */
+    .topbar-active {
+        @apply bg-slate-900 text-white;
+    }
+
+    /* Intro */
+    .foto {
+        /* When the orientation landscape (like mobile horizontal) the image is hidden  */
+        /* @apply md:landscape:hidden lg:landscape:block; */
+    }
+
+    /* Component styles  */
+    .section-item {
+        @apply w-screen h-[calc(100vh-5rem)] top-20;
+    }
+
+    /* Lines of hamburguer menu */
+    .hamburguer-lines {
+        @apply w-full h-[3px] bg-slate-900 transition-all duration-500 ease-in;
+    }
+
+    /* Lines of hamburguer menu open */
+    .hamburguer-lines-active {
+        @apply w-full h-[3px] bg-white origin-left transition-all duration-500 ease-in
+        first:rotate-45
+        even:opacity-0
+        last:-rotate-45;
+    }
+
+    /* Active class for the menu */
+    .menu-active {
+        @apply right-0 overflow-y-hidden;
+    }
+
+    /* List menu elements */
+    .list-menu-item {
+        @apply mb-10 hover:font-medium;
+    }
+
+    /* Footer logos */
+    .footer-logos {
+        @apply m-[2px] transition-all duration-200 ease-in-out;
+    }
+
+    .footer-logos-links {
+        @apply cursor-pointer hover:scale-125 lg:px-3 transition-all duration-300 ease-in;
+    }
+
+    /* Skills  */
+    .skills-list-item {
+        @apply my-2 bg-gradient-to-r from-[#66a6ff] to-[#89f7fe] hover:to-[#8fd3f4] hover:from-[#84fab0]
+        text-slate-50 hover:text-slate-800 w-max rounded-lg py-1 px-2 md:w-1/4  md:mx-6 md:mb-6 md:text-xl lg:w-1/5 lg:mb-12
+        transition-all duration-200 ease-in;
+    }
+
+    /* Project categories */
+    .category-list-element {
+        @apply border border-slate-900 rounded-lg p-2 cursor-pointer font-medium text-base md:font-bold md:text-xl
+        hover:shadow-lg transition-all duration-200 ease-in;
+    }
+
+    /* Project categories active */
+    .active {
+        @apply bg-slate-900 text-white;
+    }
+
+    /* Projects */
+    .project-card {
+        @apply mb-8 lg:w-2/5;
+    }
+
+    /* Project button  */
+    .project-button {
+        @apply text-slate-900 p-2 rounded-md border-[1px] border-slate-900 hover:bg-slate-900;
+    }
+
+    /* Contact */
+    /* contact form inputs */
+    .form {
+        @apply mb-4 bg-gray-50 p-2 rounded-2xl text-slate-900;
+    }
+
+    /* ------------------------------------------- */
+    .image-gradient {
+        background: linear-gradient(
+                -45deg,
+                #b5fffc,
+                #c2e1ff,
+                #a8ffcb,
+                #ffda9c,
+                #ff9275
+        );
+        /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* ------------------------------------------- */
+    /* List projects elements */
+    .list-project-item {
+        @apply text-lg mr-12 p-2 cursor-pointer focus:bg-slate-900 focus:text-white focus:rounded-xl;
+    }
+
+    /* Project item */
+    .project-item {
+        @apply w-1/3 h-48 rounded-[20px] border border-solid border-gray-100 my-3 mx-5 flex items-center justify-center text-white relative cursor-pointer;
+    }
+
+    /* Title project */
+    .title-project {
+        @apply absolute text-xl;
+    }
+
+    /* Blink animation for the ityped library */
+    .ityped-cursor {
+        -webkit-animation: blink 0.3s infinite;
+        -moz-animation: blink 0.3s infinite;
+        animation: blink 0.3s infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
 }
