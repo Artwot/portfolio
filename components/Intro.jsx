@@ -1,7 +1,7 @@
 // Description: Intro section of the home page
 const Title = () => {
   return (
-    <section className="title bg-bgLight font-spectral text-[50px] leading-[55px]">
+    <section className="title  font-spectral text-[50px] leading-[55px]">
       <h3 className="font-extralight text-3xl">Hi, my name is</h3>
       <h1 className="font-medium">Jorge Sarabia.</h1>
       <h1 className="font-extralight">
