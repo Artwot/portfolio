@@ -1,5 +1,4 @@
 /* Google Fonts */
-/*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 /*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,400;1,200&display=swap');
@@ -22,7 +21,6 @@
     html {
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
-        scrollbar-width: none;
     }
 }
 
@@ -30,7 +28,19 @@
     /*  Hamburger menu */
     .hamburger-menu {
         @apply w-[36px] h-[36px] border rounded-full  flex flex-col justify-evenly items-center cursor-pointer
-        py-2 border-secondary;
+        py-2 border-secondary z-50;
+    }
+
+    .hamburger-menu-active {
+        @apply text-bgLight;
+    }
+
+    .hamburger-line {
+        @apply block h-[1px] w-1/2 bg-secondary transition-all duration-500 ease-in;
+    }
+
+    .hamburger-line-active {
+        @apply bg-bgLight;
     }
 
     .navbar-hidden {
@@ -38,11 +48,11 @@
     }
 
     .nav-visible {
-        @apply translate-y-0 ;
+        @apply translate-y-0 z-10 ;
     }
 
-    .hamburger-line {
-        @apply block h-[1px] w-1/2 bg-secondary transition-all duration-500 ease-in;
+    .sidebar-overlay {
+        @apply fixed top-0 left-0 w-full h-screen bg-white bg-opacity-20 backdrop-blur-sm shadow-lg z-10 hidden overflow-hidden;
     }
 
     /* h2 body */
@@ -155,13 +165,13 @@
 
     @keyframes gradient {
         0% {
-            background-position: 0% 50%;
+            background-position: 0 50%;
         }
         50% {
             background-position: 100% 50%;
         }
         100% {
-            background-position: 0% 50%;
+            background-position: 0 50%;
         }
     }
 
