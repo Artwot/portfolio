@@ -1,21 +1,20 @@
 import Link from "next/link";
 
-const Menu = ({ menuOpen, setMenuOpen }) => {
+const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
+  const handleClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div
       className={
-        "w-60 md:w-80 h-screen overflow-y-hidden bg-slate-900 text-white font-light fixed top-0 -right-80 z-40 flex flex-col items-center justify-center transition-all duration-700 ease-in-out " +
+        "w-60 z-20 md:w-80 h-screen overflow-y-hidden bg-slate-900 text-white font-light fixed top-0 -right-80  flex flex-col items-center justify-center transition-all duration-700 ease-in-out  " +
         (menuOpen ? "-right-0" : "-right-80")
       }
     >
       <ul className="m-0 p-0 w-[60%] text-2xl md:text-4xl">
         {/* Intro */}
-        <li
-          className="list-menu-item"
-          onClick={() => {
-            setMenuOpen(false);
-          }}
-        >
+        <li className="list-menu-item" onClick={handleClick}>
           <Link href="/#intro" scroll={false}>
             Intro
           </Link>
@@ -115,4 +114,4 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
   );
 };
 
-export default Menu;
+export default HamburgerMenu;
