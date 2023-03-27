@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import { BabyChangingStation } from "@mui/icons-material";
 
-const NavbarScroll = () => {
+const NavbarScroll = ({ menuOpen, setMenuOpen }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
+  // Hide navbar when scrolling down and show it when scrolling up using useEffect
   useEffect(() => {
-    console.log("NavbarScroll useEffect");
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       if (prevScrollPos > currentScrollPos) {
@@ -21,10 +21,11 @@ const NavbarScroll = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-  return <Navbar />;
+  return <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />;
 };
 
 export default NavbarScroll;
