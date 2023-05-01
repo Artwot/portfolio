@@ -7,9 +7,12 @@ module.exports = {
     extend: {
       colors: {
         bgLight: "#FFFFFF",
+        light: "#F8F8F8",
         textGray: "#000000",
         primary: "#52D1B7",
         secondary: "#0B192E",
+        tertiary: "#80868B",
+        quaternary: "#F0FAFF",
       },
     },
     fontFamily: {
