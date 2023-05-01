@@ -8,11 +8,11 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
       className={
-        "w-2/3 z-20 md:w-80 h-screen overflow-y-hidden bg-white text-black font-light fixed top-0 -right-80  flex flex-col items-center justify-center transition-all duration-700 ease-in-out  " +
+        "w-2/3 z-20 h-screen overflow-y-hidden font-spartan bg-primary text-white font-light fixed top-0 -right-80  flex flex-col items-center justify-center transition-all duration-700 ease-in-out  " +
         (menuOpen ? "-right-0" : "-right-80")
       }
     >
-      <ul className="m-0 p-0 w-[60%] text-2xl md:text-4xl">
+      <ul className="w-[70%] text-3xl">
         {/* Intro */}
         <li className="list-menu-item" onClick={handleClick}>
           <Link href="/pages#intro" scroll={false}>
