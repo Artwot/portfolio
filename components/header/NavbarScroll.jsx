@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
-import { BabyChangingStation } from "@mui/icons-material";
 
 const NavbarScroll = ({ menuOpen, setMenuOpen }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);

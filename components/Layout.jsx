@@ -1,8 +1,5 @@
-import Navbar from "./Navbar";
-import HamburgerMenu from "./HamburgerMenu";
-import Footer from "./Footer";
 import { useState } from "react";
-import NavbarScroll from "./NavbarScroll";
+import NavbarScroll from "./header/NavbarScroll";
 
 const Layout = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);

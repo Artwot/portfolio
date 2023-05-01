@@ -8,14 +8,14 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
       className={
-        "w-60 z-20 md:w-80 h-screen overflow-y-hidden bg-slate-900 text-white font-light fixed top-0 -right-80  flex flex-col items-center justify-center transition-all duration-700 ease-in-out  " +
+        "w-2/3 z-20 md:w-80 h-screen overflow-y-hidden bg-white text-black font-light fixed top-0 -right-80  flex flex-col items-center justify-center transition-all duration-700 ease-in-out  " +
         (menuOpen ? "-right-0" : "-right-80")
       }
     >
       <ul className="m-0 p-0 w-[60%] text-2xl md:text-4xl">
         {/* Intro */}
         <li className="list-menu-item" onClick={handleClick}>
-          <Link href="/#intro" scroll={false}>
+          <Link href="/pages#intro" scroll={false}>
             Intro
           </Link>
         </li>
@@ -26,7 +26,7 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
             setMenuOpen(false);
           }}
         >
-          <a href="#skills">Habilidades</a>
+          <a href="components/header/HamburgerMenu#skills">Habilidades</a>
         </li>
         {/* Projects */}
         <li
@@ -35,7 +35,7 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
             setMenuOpen(false);
           }}
         >
-          <a href="#projects">Proyectos</a>
+          <a href="components/header/HamburgerMenu#projects">Proyectos</a>
         </li>
         {/* About */}
         <li
@@ -44,7 +44,7 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
             setMenuOpen(false);
           }}
         >
-          <a href="#about">Sobre mí</a>
+          <a href="components/header/HamburgerMenu#about">Sobre mí</a>
         </li>
         {/* Currículum */}
         <li
@@ -82,7 +82,7 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
             </a>
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/jorge-arturo-sarabia/"
+              href="components/header/HamburgerMenu"
               target="_blank"
               rel="noreferrer"
               className="footer-logos-links group hover:scale-125 transition-all duration-200 ease-in"

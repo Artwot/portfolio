@@ -27,8 +27,8 @@
 @layer components {
     /*  Hamburger menu */
     .hamburger-menu {
-        @apply w-[36px] h-[36px] border rounded-full  flex flex-col justify-evenly items-center cursor-pointer
-        py-2 border-secondary z-50;
+        @apply w-[36px] h-[36px] border rounded-full  flex flex-col justify-around items-center cursor-pointer
+        py-[8px] px-[8px] border-secondary z-50;
     }
 
     .hamburger-menu-active {
@@ -36,15 +36,24 @@
     }
 
     .hamburger-line {
-        @apply block h-[1px] w-1/2 bg-secondary transition-all duration-500 ease-in;
+        @apply block h-[1px] w-full bg-secondary transition-all duration-500 ease-in mx-1;
     }
 
     .hamburger-line-active {
-        @apply bg-bgLight;
+        @apply bg-bgLight origin-left transition-all duration-500 ease-in
+        first:rotate-45
+            translate-x-0.5
+        even:opacity-0
+        last:-rotate-45;
     }
 
     .navbar-hidden {
         @apply -translate-y-full ;
+    }
+
+    /* TODO: Add hamburger menu animations */
+    #line-1 + .hamburger-line-active {
+        @apply bg-blue-100;
     }
 
     .nav-visible {
@@ -52,7 +61,7 @@
     }
 
     .sidebar-overlay {
-        @apply fixed top-0 left-0 w-full h-screen bg-white bg-opacity-20 backdrop-blur-sm shadow-lg z-10 hidden overflow-hidden;
+        @apply fixed top-0 left-0 w-full h-screen bg-red-500 bg-opacity-20 backdrop-blur-sm shadow-lg z-10 hidden overflow-hidden;
     }
 
     /* h2 body */
