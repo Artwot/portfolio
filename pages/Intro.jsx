@@ -13,7 +13,7 @@ const Title = () => {
 
 const Intro = () => {
   return (
-    <section className="intro-section h-screen flex items-center mx-8">
+    <section className="intro-section h-screen flex items-center">
       <Title />
     </section>
   );
