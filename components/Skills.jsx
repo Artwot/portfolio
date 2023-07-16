@@ -1,8 +1,6 @@
-const Skills = () => {
+const SkillsDeprecated = () => {
   return (
-    <div
-      className="max-w-[1440px] mx-auto h-max relative top-[66px] md:top-[80px] p-8 lg:px-20 mt-20 "
-    >
+    <div className="max-w-[1440px] mx-auto h-max relative top-[66px] md:top-[80px] p-8 lg:px-20 mt-20 ">
       <h2 className="subtitle ">Habilidades técnicas</h2>
       <p className="paragraph ">
         Considero que a lo largo de mis estudios universitarios, logré adquirir
@@ -29,4 +27,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsDeprecated;

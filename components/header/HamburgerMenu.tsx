@@ -1,4 +1,12 @@
+/**
+ * @file HamburgerMenu.jsx
+ * @description A component that renders a hamburger menu icon and a menu that opens when the icon is clicked.
+ * @requires React, next/link
+ * @exports HamburgerMenu
+ */
+
 import Link from "next/link";
+
 
 const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
   const handleClick = () => {
@@ -8,8 +16,9 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
       className={
-        "w-2/3 z-20 h-screen overflow-y-hidden font-spartan bg-primary text-white font-light fixed top-0 -right-80  flex flex-col items-center justify-center transition-all duration-700 ease-in-out  " +
-        (menuOpen ? "-right-0" : "-right-80")
+        'w-full z-20 h-screen overflow-y-hidden font-spartan bg-black text-white font-light fixed top-0 ' +
+        'flex flex-col items-center justify-center transition-all duration-700 ease-in-out  ' +
+        (menuOpen ? '-right-0' : '-right-full')
       }
     >
       <ul className="w-[70%] text-3xl">
@@ -55,7 +64,6 @@ const HamburgerMenu = ({ menuOpen, setMenuOpen }) => {
         >
           <a
             href="/resources/Curriculum.pdf"
-            alt="alt text"
             target="_blank"
             rel="noopener noreferrer"
           >

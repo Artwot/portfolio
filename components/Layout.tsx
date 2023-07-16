@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavbarScroll from "./header/NavbarScroll";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }) : JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

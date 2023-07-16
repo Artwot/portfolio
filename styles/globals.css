@@ -23,9 +23,6 @@
         scroll-snap-type: y mandatory;
     }
 
-    main {
-        margin: 0 2rem;
-    }
 }
 
 @layer components {
@@ -61,7 +58,7 @@
     }
 
     .sidebar-overlay {
-        @apply fixed top-0 left-0 w-full h-screen bg-primary bg-opacity-20 backdrop-blur-sm shadow-lg z-10 hidden overflow-hidden;
+        @apply fixed top-0 left-0 w-full h-screen bg-[#A8A9AB] bg-opacity-20 backdrop-blur-sm shadow-lg z-10 hidden overflow-hidden;
     }
 
     /* section container */
@@ -81,7 +78,7 @@
 
     /* Selected buttons*/
     .button-selected {
-        @apply border-b-2 border-b-primary;
+        @apply border-b-2  transition-all translate-x-0 duration-300 ease-in-out;
     }
 
     li {

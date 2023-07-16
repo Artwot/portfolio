@@ -8,9 +8,9 @@ module.exports = {
       colors: {
         bgLight: "#FFFFFF",
         light: "#F8F8F8",
-        textGray: "#000000",
+        textGray: "#363636",
         primary: "#52D1B7",
-        secondary: "#0B192E",
+        secondary: "#363636",
         tertiary: "#80868B",
         quaternary: "#F0FAFF",
       },

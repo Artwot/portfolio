@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
-    const sidebarOverlay = document.querySelector(".sidebar-overlay");
+    const sidebarOverlay: HTMLElement | null = document.querySelector(".sidebar-overlay");
     if (menuOpen) {
       sidebarOverlay.style.display = "block";
       document.body.classList.add("overflow-hidden");
